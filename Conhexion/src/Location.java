@@ -1,22 +1,24 @@
-
 public class Location 
 {
+	private int row;
+	private int column;
+	
 	// Constructs a new Location object with the specified row and column
 	public Location(int rowP, int columnP)
 	{
-		throw new UnsupportedOperationException();
+		row = rowP;
+		column = columnP;
 	}
 
 	// Returns the row integer that was passed to the constructor
 	public int getRow()
 	{
-		throw new UnsupportedOperationException();
+		return (row);
 	}
 
 	// Returns the column integer that was passed to the constructor
 	public int getColumn()
 	{
-		throw new UnsupportedOperationException();
+		return (column);
 	}
 }
-
