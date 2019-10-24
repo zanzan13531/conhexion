@@ -8,7 +8,16 @@ public class Board {
 
 	// Constructs a new board with the specified number of rows and columns
 	public Board(int rows, int columns) {
-		int[][] boardy = new int[rows][columns];
+		
+		int[][][] boardy = new int[rows][columns][1];
+		
+		for (int x = 0; x < rows; x++) {
+			for (int y = 0; y < rows; y++) {
+				boardy[x][y][0] = 0;
+			}
+		}
+		
+		
 	}
 
 	// Constructs a new Board that clones the state of the specified Board
