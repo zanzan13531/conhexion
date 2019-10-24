@@ -27,7 +27,7 @@ public class Board {
 
 	// Returns the total number of rows in this Board
 	public int getRows() {
-		throw new UnsupportedOperationException();
+		return(boardy.length);
 	}
 
 	// Returns the total number of columns in this Board
