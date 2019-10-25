@@ -47,7 +47,7 @@ public class Board {
 	// one of the three "player" ints defined on this class) into the
 	// specified location on the board
 	public void setPlayer(Location location, int player) {
-		throw new UnsupportedOperationException();
+		boardy[location.getRow()][location.getColumn()][0] = player;
 	}
 
 	// Although the GameManager does not need to call this method, the
