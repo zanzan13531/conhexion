@@ -5,11 +5,12 @@ public class Board {
 	public static final int PLAYER_NONE = 0;
 	public static final int PLAYER_1 = 1;
 	public static final int PLAYER_2 = 2;
+	int[][][] boardy;
 
 	// Constructs a new board with the specified number of rows and columns
 	public Board(int rows, int columns) {
 		
-		int[][][] boardy = new int[rows][columns][1];
+		boardy = new int[rows][columns][1];
 		
 		for (int x = 0; x < rows; x++) {
 			for (int y = 0; y < rows; y++) {
@@ -32,7 +33,7 @@ public class Board {
 
 	// Returns the total number of columns in this Board
 	public int getColumns() {
-		throw new UnsupportedOperationException();
+		return(boardy[0].length);
 	}
 
 	// Returns one of the three "player" ints defined on this class
