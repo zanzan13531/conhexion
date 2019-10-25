@@ -5,7 +5,7 @@ public class Board {
 	public static final int PLAYER_NONE = 0;
 	public static final int PLAYER_1 = 1;
 	public static final int PLAYER_2 = 2;
-	int[][][] boardy;
+	private int[][][] boardy;
 
 	// Constructs a new board with the specified number of rows and columns
 	public Board(int rows, int columns) {
@@ -28,19 +28,19 @@ public class Board {
 
 	// Returns the total number of rows in this Board
 	public int getRows() {
-		return(boardy.length);
+		return (boardy.length);
 	}
 
 	// Returns the total number of columns in this Board
 	public int getColumns() {
-		return(boardy[0].length);
+		return (boardy[0].length);
 	}
 
 	// Returns one of the three "player" ints defined on this class
 	// representing which player, if any, occupies the specified
 	// location on the board
 	public int getPlayer(Location location) {
-		throw new UnsupportedOperationException();
+		return (boardy[location.getRow()][location.getColumn()][0]);
 	}
 
 	// Places a game piece from the specified player (represented by
